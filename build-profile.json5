@@ -1,0 +1,78 @@
+{
+  "app": {
+    "signingConfigs": [],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.1.1(19)",
+        "compatibleSdkVersion": "5.1.1(19)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ability",
+      "srcPath": "../../Modules/MyLibs/libs/ability"
+    },
+    {
+      "name": "apm",
+      "srcPath": "../../Modules/MyLibs/libs/apm"
+    },
+    {
+      "name": "common",
+      "srcPath": "../../Modules/MyLibs/libs/common"
+    },
+    {
+      "name": "common_ui",
+      "srcPath": "../../Modules/MyLibs/libs/common_ui"
+    },
+    {
+      "name": "life_cycle",
+      "srcPath": "../../Modules/MyLibs/libs/life_cycle"
+    },
+    {
+      "name": "network",
+      "srcPath": "../../Modules/MyLibs/libs/network"
+    },
+    {
+      "name": "router",
+      "srcPath": "../../Modules/MyLibs/libs/router"
+    },
+    {
+      "name": "storage",
+      "srcPath": "../../Modules/MyLibs/libs/storage"
+    },
+    {
+      "name": "web",
+      "srcPath": "../../Modules/MyLibs/libs/web"
+    }
+  ]
+}
