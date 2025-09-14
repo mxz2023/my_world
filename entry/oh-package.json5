@@ -5,6 +5,16 @@
   "main": "",
   "author": "",
   "license": "",
-  "dependencies": {}
+  "dependencies": {
+    '@mxz/ability': 'file:../../../Modules/MyLibs/libs/ability',
+    '@mxz/apm': 'file:../../../Modules/MyLibs/libs/apm',
+    '@mxz/common': 'file:../../../Modules/MyLibs/libs/common',
+    '@mxz/common_ui': 'file:../../../Modules/MyLibs/libs/common_ui',
+    '@mxz/life_cycle': 'file:../../../Modules/MyLibs/libs/life_cycle',
+    '@mxz/network': 'file:../../../Modules/MyLibs/libs/network',
+    '@mxz/router': 'file:../../../Modules/MyLibs/libs/router',
+    '@mxz/storage': 'file:../../../Modules/MyLibs/libs/storage',
+    '@mxz/web': 'file:../../../Modules/MyLibs/libs/web'
+  }
 }
 

@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/gemini/.ohos/config/default_MyWorld_4gfxI4uHgtIhwqDX9MCsBNTT4RdJVhbR9dEPbcwSLOw=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B4057F7A100328FDE068A66AD3BE837BABAB562D97B9891FCB1A6C179870DDAE008E2D4E0E5BC8F",
+          "profile": "/Users/gemini/.ohos/config/default_MyWorld_4gfxI4uHgtIhwqDX9MCsBNTT4RdJVhbR9dEPbcwSLOw=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/gemini/.ohos/config/default_MyWorld_4gfxI4uHgtIhwqDX9MCsBNTT4RdJVhbR9dEPbcwSLOw=.p12",
+          "storePassword": "0000001B5BFB89A70AFEA2B2EBC2D7B846DD6489B52F1208B8C7DB44F977A119F1B37FDD8A7FDA75C7C925"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
