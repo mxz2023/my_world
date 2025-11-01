@@ -1,0 +1,149 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/密钥.p12",
+          "storePassword": "000000186900EF838880BD2214D758304AA91FC809C59A9DF6EE2A64098021459E2BB8F4FA2DF6A6",
+          "keyAlias": "timeimprint",
+          "keyPassword": "00000018B21A2D161F80EBCA26010EAF416A007D877C733A403C2BA39B956017D35F60837646F59E",
+          "signAlg": "SHA256withECDSA",
+          "profile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/浮生半日闲Debug.p7b",
+          "certpath": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/调试证书.cer"
+        }
+      },
+      {
+        "name": "timeimprint",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/密钥.p12",
+          "storePassword": "00000018FF7BED9BB6D5377358FCA070C7E545548E9CB83431767DC379C560866CD5E473B0A4B921",
+          "keyAlias": "timeimprint",
+          "keyPassword": "00000018B0EB2C27745DD486A5B88DC92016D78BAEC66350C1A35CD26C7507005CFF47FC94629D2E",
+          "signAlg": "SHA256withECDSA",
+          "profile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/叶记时光Release.p7b",
+          "certpath": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/发布证书.cer"
+        }
+      },
+      {
+        "name": "fitness",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/密钥.p12",
+          "storePassword": "000000186F5669628F8307ED184465B94D3663A960BE42BA51CC1C7395DD360AAF3ED1D4630B35C4",
+          "keyAlias": "timeimprint",
+          "keyPassword": "00000018675BCC0F8183402FAEAF49E5920A673D32E0F4E6CD134D7E70308EA04E4B659483C64B5A",
+          "signAlg": "SHA256withECDSA",
+          "profile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/叶记健康Release.p7b",
+          "certpath": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/发布证书.cer"
+        }
+      },
+      {
+        "name": "qrcode",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/密钥.p12",
+          "storePassword": "000000187D724E32F6C7F0C4AD33D55A7E84723F92386F6179D7C7C478B52C7FF38910A69FECE2BB",
+          "keyAlias": "timeimprint",
+          "keyPassword": "000000186A8926932A205A67FDE21BC5C5B1E02BE7B5D1305CCFB662FB2D28B55AD45CBE19919682",
+          "signAlg": "SHA256withECDSA",
+          "profile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/叶记码包Release.p7b",
+          "certpath": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/发布证书.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "bundleName": "cn.net.mxz.qrcode",
+        "label": "$string:app_name",
+        "icon": "$media:develop_image",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      },
+      {
+        "name": "timeimprint",
+        "signingConfig": "timeimprint",
+        "bundleName": "cn.net.mxz.timeimprint",
+        "label": "$string:app_timeimprint",
+        "icon": "$media:timeimprint_image",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      },
+      {
+        "name": "fitness",
+        "signingConfig": "fitness",
+        "bundleName": "cn.net.mxz.qrcode",
+        "label": "$string:app_fitness",
+        "icon": "$media:fitness_image",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      },
+      {
+        "name": "qrcode",
+        "signingConfig": "qrcode",
+        "bundleName": "cn.net.mxz.qrcode",
+        "label": "$string:app_qrcode",
+        "icon": "$media:qrcode_image",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      },
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default",
+            "timeimprint",
+            "fitness",
+            "qrcode"
+          ]
+        }
+      ]
+    }
+  ]
+}
