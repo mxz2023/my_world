@@ -18,26 +18,26 @@
         "name": "timeimprint",
         "type": "HarmonyOS",
         "material": {
-          "storeFile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/密钥.p12",
-          "storePassword": "00000018FF7BED9BB6D5377358FCA070C7E545548E9CB83431767DC379C560866CD5E473B0A4B921",
+          "certpath": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/发布证书.cer",
           "keyAlias": "timeimprint",
-          "keyPassword": "00000018B0EB2C27745DD486A5B88DC92016D78BAEC66350C1A35CD26C7507005CFF47FC94629D2E",
-          "signAlg": "SHA256withECDSA",
+          "keyPassword": "00000018720FFB6C2331488B9D8625D8DF6FF76576CF78D4457D021591D2CE0E03823E4B46098CC8",
           "profile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/叶记时光Release.p7b",
-          "certpath": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/发布证书.cer"
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/密钥.p12",
+          "storePassword": "00000018875F4AC7814E00256C8E89332E1F92B5D1530091A02D5AB8751DB613D5E239BD62D20318"
         }
       },
       {
         "name": "fitness",
         "type": "HarmonyOS",
         "material": {
-          "storeFile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/密钥.p12",
-          "storePassword": "000000186F5669628F8307ED184465B94D3663A960BE42BA51CC1C7395DD360AAF3ED1D4630B35C4",
+          "certpath": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/发布证书.cer",
           "keyAlias": "timeimprint",
-          "keyPassword": "00000018675BCC0F8183402FAEAF49E5920A673D32E0F4E6CD134D7E70308EA04E4B659483C64B5A",
-          "signAlg": "SHA256withECDSA",
+          "keyPassword": "00000018ECD78B3382EEF532C5E129B581057E3E8316C5199AD84235004DAC7368C5FDF49A7660EB",
           "profile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/叶记健康Release.p7b",
-          "certpath": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/发布证书.cer"
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/gemini/Documents/开发者/鸿蒙开发者证书/密钥及证书/密钥.p12",
+          "storePassword": "000000189C67E34EA4F3930FEBA87369D01AA3080C109C53440FA3D5900E2E21E155AE46A6D23045"
         }
       },
       {
@@ -58,7 +58,7 @@
       {
         "name": "default",
         "signingConfig": "default",
-        "bundleName": "cn.net.mxz.qrcode",
+        "bundleName": "cn.net.mxz.myworld",
         "label": "$string:app_name",
         "icon": "$media:develop_image",
         "targetSdkVersion": "6.0.0(20)",
@@ -90,7 +90,7 @@
       {
         "name": "fitness",
         "signingConfig": "fitness",
-        "bundleName": "cn.net.mxz.qrcode",
+        "bundleName": "cn.net.mxz.fitness",
         "label": "$string:app_fitness",
         "icon": "$media:fitness_image",
         "targetSdkVersion": "6.0.0(20)",
@@ -144,6 +144,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "fitness",
+      "srcPath": "../Features/Fitness/fitness",
+    },
+    {
+      "name": "component",
+      "srcPath": "../Modules/Component/component",
+    },
+    {
+      "name": "logger",
+      "srcPath": "../Modules/Logger/logger",
     }
   ]
 }
