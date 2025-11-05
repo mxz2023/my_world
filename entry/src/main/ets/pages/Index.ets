@@ -1,9 +1,8 @@
 import { bundleManager } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
-import { CommonDefine } from '@mxz/component';
-import { HealthOverview } from '@mxz/fitness';
-import { logger } from '@mxz/logger'
+import { router } from '@mxz/router'
+import { logger } from '@mxz/common'
 
 const TAG = "Index"
 
@@ -11,11 +10,9 @@ const TAG = "Index"
 @ComponentV2
 struct Index {
   @Local appName: ResourceStr = ""
-  private pathStack: NavPathStack = new NavPathStack()
+  private pageInfos: NavPathStack = router.getNavStack();
 
   aboutToAppear(): void {
-    AppStorage.setOrCreate(CommonDefine.globalPathStackName, this.pathStack);
-
     let bundleFlags = bundleManager.BundleFlag.GET_BUNDLE_INFO_DEFAULT;
     try {
       bundleManager.getBundleInfoForSelf(bundleFlags)
@@ -38,7 +35,7 @@ struct Index {
               this.appName = $r('app.string.app_qrcode')
               break
             }
-            default : {
+            default: {
               this.appName = $r('app.string.app_name')
             }
           }
@@ -52,14 +49,16 @@ struct Index {
   }
 
   build() {
-    Navigation(this.pathStack) {
-      HealthOverview()
+    Navigation(this.pageInfos) {
+
     }
-    .title(this.appName)
-    .titleMode(NavigationTitleMode.Mini)
     .mode(NavigationMode.Stack)
-    .hideBackButton(true)
-    .width('100%')
+    .hideTitleBar(true)
+    .hideToolBar(true)
     .height('100%')
+    .width('100%')
+    .onAppear(() => {
+      this.pageInfos.replacePathByName('welcome', null)
+    })
   }
 }

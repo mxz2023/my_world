@@ -1,0 +1,20 @@
+{
+  "routerMap": [
+    {
+      "name": "main",
+      "pageSourceFile": "src/main/ets/pages/Main.ets",
+      "buildFunction": "PageBuilder",
+      "data": {
+        "description": "this is contact page"
+      }
+    },
+    {
+      "name": "welcome",
+      "pageSourceFile": "src/main/ets/pages/Welcome.ets",
+      "buildFunction": "PageBuilder",
+      "data": {
+        "description": "this is contact page"
+      }
+    }
+  ]
+}

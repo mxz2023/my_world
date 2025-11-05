@@ -7,8 +7,9 @@
   "license": "",
   "dependencies": {
     "@mxz/fitness": "file:../../Features/Fitness/fitness",
-    "@mxz/component": "file:../../Modules/Component/component",
-    "@mxz/logger": "file:../../Modules/Logger/logger"
+    "@mxz/component": "file:../../Modules/component",
+    "@mxz/common": "file:../../Modules/common",
+    "@mxz/router": "file:../../Modules/router"
   }
 }
 

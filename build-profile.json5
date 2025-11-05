@@ -151,11 +151,15 @@
     },
     {
       "name": "component",
-      "srcPath": "../Modules/Component/component",
+      "srcPath": "../Modules/component",
     },
     {
-      "name": "logger",
-      "srcPath": "../Modules/Logger/logger",
-    }
+      "name": "common",
+      "srcPath": "../Modules/common",
+    },
+    {
+      "name": "router",
+      "srcPath": "../Modules/router",
+    },
   ]
 }
