@@ -35,8 +35,7 @@ struct Main {
   private controller: TabsController = new TabsController()
   private tabManager: MainTabManager = new MainTabManager()
   private isQuite: boolean = false // 是否退出
-
-  @Local curTabInfo:MainTabInfo = AppStorageV2.connect<MainTabInfo>(MainTabInfo, () => new MainTabInfo())!
+  @Local curTabInfo: MainTabInfo = AppStorageV2.connect<MainTabInfo>(MainTabInfo, () => new MainTabInfo())!
 
   aboutToAppear(): void {
 
@@ -95,7 +94,7 @@ struct Main {
         }.tabBar(this.tabBuilder("首页", 'home', TabIndex.TabHome))
 
         TabContent() {
-          Row(){
+          Row() {
             Text("开发中")
           }
         }.tabBar(this.tabBuilder("我的", 'mine', TabIndex.TabRecord))

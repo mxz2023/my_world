@@ -3,6 +3,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 import { router } from '@mxz/router'
 import { logger } from '@mxz/common'
+import { CommonDefine } from '@mxz/component';
 
 const TAG = "Index"
 
@@ -13,6 +14,8 @@ struct Index {
   private pageInfos: NavPathStack = router.getNavStack();
 
   aboutToAppear(): void {
+    AppStorage.setOrCreate(CommonDefine.globalPathStackName, this.pageInfos);
+
     let bundleFlags = bundleManager.BundleFlag.GET_BUNDLE_INFO_DEFAULT;
     try {
       bundleManager.getBundleInfoForSelf(bundleFlags)
