@@ -28,7 +28,8 @@
               "ohos.want.action.home"
             ]
           }
-        ]
+        ],
+        "orientation": "follow_desktop" // 推荐配置
       }
     ],
     "extensionAbilities": [
